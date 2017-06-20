@@ -4,7 +4,7 @@ apply plugin: 'com.novoda.bintray-release' // bintray
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         minSdkVersion 9
@@ -25,6 +25,12 @@ android {
     lintOptions {
         abortOnError false
     }
+
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+        options.addStringOption('encoding', 'UTF-8')
+        options.addStringOption('charSet', 'UTF-8')
+    }
 }
 
 dependencies {
@@ -42,5 +48,5 @@ publish {
     artifactId = 'pull-to-refresh'                   // 上传到bintray里的Package Name(这里填什么就显示什么)
     publishVersion ='1.0.0'                  // 引用版本号 (这里填什么就显示什么)
     dryRun = false                           // false:上传，true：不上传
-    desc = '首次提交，修改刷新头部文字，显示距离上次刷新时间多少分钟。'                         // 描述，不重要
+    desc = '一个修改的PullToRefresh库，修改刷新头部文字，显示距离上次刷新时间多少分钟。'  // 描述，不重要
 }

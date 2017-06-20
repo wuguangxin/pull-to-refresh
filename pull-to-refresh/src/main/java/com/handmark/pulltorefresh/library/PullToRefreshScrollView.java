@@ -51,7 +51,7 @@ public class PullToRefreshScrollView extends PullToRefreshBase<ScrollView>{
 
 	/**
 	 * 设置上拉时footer和下拉时header的背景颜色。wgx:20161230
-	 * @param color
+	 * @param drawable 背景
 	 */
 	public void setLoadingLayoutBackground(Drawable drawable){
 		if(getHeaderLayout() != null) ViewCompat.setBackground(getHeaderLayout(), drawable);
