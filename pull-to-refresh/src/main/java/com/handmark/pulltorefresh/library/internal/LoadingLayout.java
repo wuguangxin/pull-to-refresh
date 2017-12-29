@@ -245,7 +245,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 		}
 
 		if (null != mSubHeaderText) {
-			mSubHeaderText.setVisibility(View.GONE);
+			mSubHeaderText.setVisibility(View.INVISIBLE);
 		}
 	}
 
@@ -273,7 +273,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 
 		if (null != mSubHeaderText) {
 			if (TextUtils.isEmpty(mSubHeaderText.getText())) {
-				mSubHeaderText.setVisibility(View.GONE);
+				mSubHeaderText.setVisibility(View.INVISIBLE);
 			} else {
 				mSubHeaderText.setVisibility(View.VISIBLE);
 			}
@@ -347,7 +347,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	private void setSubHeaderText(CharSequence label) {
 		if (null != mSubHeaderText) {
 			if (TextUtils.isEmpty(label)) {
-				mSubHeaderText.setVisibility(View.GONE);
+				mSubHeaderText.setVisibility(View.INVISIBLE);
 			} else {
 				mSubHeaderText.setText(label);
 
