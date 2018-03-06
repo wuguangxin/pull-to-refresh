@@ -3,10 +3,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release' // bintray
 
 def mModulesName = "pull-to-refresh"
-def mVersionCode = 2
-def mVersionName = "1.0.1"
-def mDescription = "1.一个修改的PullToRefresh库，修改刷新头部文字，显示距离上次刷新时间多少分钟。" +
-        "2.修改刷新时闪一下，体验不好。"
+def mVersionCode = 3
+def mVersionName = "1.1.0"
+def mDescription = "PullToRefreshListView增加foot显示隐藏功能。"
 
 android {
     compileSdkVersion 19

@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lib_PullToRefresh.iml" filepath="$PROJECT_DIR$/Lib_PullToRefresh.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pull-to-refresh/pull-to-refresh.iml" filepath="$PROJECT_DIR$/pull-to-refresh/pull-to-refresh.iml" />
     </modules>
   </component>
 </project>

@@ -28,6 +28,7 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -347,6 +348,35 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 			super.setEmptyView(emptyView);
 		}
 
+	}
+
+	private LinearLayout mFootView;
+
+	/**
+	 * 设置ListView的Footer布局
+	 * @param footLayoutResId
+	 * @return
+	 */
+	public LinearLayout setFootLayout(int footLayoutResId){
+		if (mFootView != null) {
+			return mFootView;
+		}
+		LinearLayout mFootViewParent = (LinearLayout) View.inflate(getContext(), R.layout.pull_to_refresh_footer_parent, null);
+		mFootView = (LinearLayout) View.inflate(getContext(), footLayoutResId, null);
+		mFootViewParent.addView(mFootView);
+		getRefreshableView().addFooterView(mFootViewParent);
+		return mFootView;
+	}
+
+	/**
+	 * 设置是否显示Footer，当显示时，表示没有更多数据，所以会禁止上拉事件，当隐藏时，表示还有更多数据，上拉下拉都可以。
+	 * @param visible 是否显示
+	 */
+	public void setFootVisible(boolean visible){
+		if (mFootView != null) {
+			mFootView.setVisibility(visible ? VISIBLE : GONE);
+		}
+		setMode(visible ? Mode.PULL_FROM_START : Mode.BOTH);
 	}
 
 }
