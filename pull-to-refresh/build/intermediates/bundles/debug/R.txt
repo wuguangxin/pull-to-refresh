@@ -48,8 +48,9 @@ int id pull_to_refresh_text 0x7f06000f
 int id rotate 0x7f06000b
 int id scrollview 0x7f060001
 int id webview 0x7f060002
-int layout pull_to_refresh_header_horizontal 0x7f030000
-int layout pull_to_refresh_header_vertical 0x7f030001
+int layout pull_to_refresh_footer_parent 0x7f030000
+int layout pull_to_refresh_header_horizontal 0x7f030001
+int layout pull_to_refresh_header_vertical 0x7f030002
 int string pull_to_refresh_from_bottom_pull_label 0x7f070000
 int string pull_to_refresh_from_bottom_refreshing_label 0x7f070001
 int string pull_to_refresh_from_bottom_release_label 0x7f070002

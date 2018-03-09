@@ -31,14 +31,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    //noinspection GradleCompatible
-    compile 'com.android.support:design:25.3.1'
-    // 类似SlidingMenu的支持库 比如 NavigationView.java
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.google.firebase:firebase-appindexing:11.0.4'
+    compile 'com.google.firebase:firebase-appindexing:11.8.0'
 
     testCompile 'junit:junit:4.12'
     compile project(':pull-to-refresh')
-    compile 'com.wuguangxin:support:1.0.17'                 // 支持库
 }

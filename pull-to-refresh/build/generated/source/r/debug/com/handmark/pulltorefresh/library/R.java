@@ -160,8 +160,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static int webview=0x7f060002;
     }
     public static final class layout {
-        public static int pull_to_refresh_header_horizontal=0x7f030000;
-        public static int pull_to_refresh_header_vertical=0x7f030001;
+        public static int pull_to_refresh_footer_parent=0x7f030000;
+        public static int pull_to_refresh_header_horizontal=0x7f030001;
+        public static int pull_to_refresh_header_vertical=0x7f030002;
     }
     public static final class string {
         public static int pull_to_refresh_from_bottom_pull_label=0x7f070000;
