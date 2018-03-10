@@ -1028,8 +1028,8 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 			case VERTICAL:
 				if (mMode.showHeaderLoadingLayout()) {
 					mHeaderLayout.setHeight(maximumPullScroll);
-//					pTop = -maximumPullScroll;
-					pTop = 0; // TODO 设置为0，可在预览中显示正常,但APP内会距上 maximumPullScroll 距离
+					pTop = -maximumPullScroll;
+//					pTop = 0; // TODO 设置为0，可在预览中显示正常,但APP内会距上 maximumPullScroll 距离
 				} else {
 					pTop = 0;
 				}
