@@ -3,17 +3,17 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release' // bintray
 
 def mModulesName = "pull-to-refresh"
-def mVersionCode = 3
-def mVersionName = "1.1.0"
-def mDescription = "PullToRefreshListView增加foot显示隐藏功能。"
+def mVersionCode = 4
+def mVersionName = "1.2.0"
+def mDescription = "优化升级到gradle-4.1"
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 27
     buildToolsVersion '26.0.2'
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 27
         multiDexEnabled true
         versionCode mVersionCode
         versionName mVersionName

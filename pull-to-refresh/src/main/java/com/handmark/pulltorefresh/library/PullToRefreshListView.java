@@ -354,8 +354,8 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 
 	/**
 	 * 设置ListView的Footer布局
-	 * @param footLayoutResId
-	 * @return
+	 * @param footLayoutResId footLayout布局资源ID
+	 * @return LinearLayout
 	 */
 	public LinearLayout setFootLayout(int footLayoutResId){
 		if (mFootView != null) {
